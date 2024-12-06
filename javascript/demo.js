@@ -74,42 +74,74 @@
 
 // }
 
-function add(){
-    let a=parseInt(document.getElementById("add1").value)
-    let b=parseInt(document.getElementById("add2").value)
-    console.log(a+b);
-    let h3=document.getElementById("h3")
-    h3.innerHTML=a+b
-}
+// function add(){
+//     let a=parseInt(document.getElementById("add1").value)
+//     let b=parseInt(document.getElementById("add2").value)
+//     console.log(a+b);
+//     let h3=document.getElementById("h3")
+//     h3.innerHTML=a+b
+// }
 
-function sub(){
-    let a=parseInt(document.getElementById("sub1").value)
-    let b=parseInt(document.getElementById("sub2").value)
-    console.log(a-b);
-    let h3=document.getElementById("h4")
-    h3.innerHTML=a-b
-}
+// function sub(){
+//     let a=parseInt(document.getElementById("sub1").value)
+//     let b=parseInt(document.getElementById("sub2").value)
+//     console.log(a-b);
+//     let h3=document.getElementById("h4")
+//     h3.innerHTML=a-b
+// }
 
-function mul(){
-    let a=parseInt(document.getElementById("mul1").value)
-    let b=parseInt(document.getElementById("mul2").value)
-    console.log(a*b);
-    let h3=document.getElementById("h5")
-    h3.innerHTML=a*b
-}
+// function mul(){
+//     let a=parseInt(document.getElementById("mul1").value)
+//     let b=parseInt(document.getElementById("mul2").value)
+//     console.log(a*b);
+//     let h3=document.getElementById("h5")
+//     h3.innerHTML=a*b
+// }
 
-function div(){
-    let a=parseInt(document.getElementById("div1").value)
-    let b=parseInt(document.getElementById("div2").value)
-    console.log(a/b);
-    let h3=document.getElementById("h6")
-    h3.innerHTML=a/b
-}
+// function div(){
+//     let a=parseInt(document.getElementById("div1").value)
+//     let b=parseInt(document.getElementById("div2").value)
+//     console.log(a/b);
+//     let h3=document.getElementById("h6")
+//     h3.innerHTML=a/b
+// }
 
-function mod(){
-    let a=parseInt(document.getElementById("mod1").value)
-    let b=parseInt(document.getElementById("mod2").value)
-    console.log(a%b);
-    let h3=document.getElementById("h7")
-    h3.innerHTML=a%b
+// function mod(){
+//     let a=parseInt(document.getElementById("mod1").value)
+//     let b=parseInt(document.getElementById("mod2").value)
+//     console.log(a%b);
+//     let h3=document.getElementById("h7")
+//     h3.innerHTML=a%b
+// }
+
+
+// let a=10
+// let b=20
+// if (a==b){
+//     console.log('eql');
+// }
+// else if(a!=b){
+//     console.log('not');
+// }
+// else{
+//     console.log('else');
+// }
+
+
+
+
+
+
+function fun1(){
+    let a=parseInt(document.getElementById("a").value)
+    let b=parseInt(document.getElementById("b").value)
+    let h3=document.getElementById("h1")
+    if (b>=5){
+        s=a*0.05
+        v=a+s
+        h3.innerHTML=v
+        }
+        else{
+        h3.innerHTML=('no bonus')
+        }
 }
