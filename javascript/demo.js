@@ -147,7 +147,7 @@
 // }
 
 
-let data=[,{id:'1',name:'fayas',age:22},{id:'2',name:'shahid',age:22},{id:'3',name:'althaf',age:22},{id:'4',name:'yasin',age:22},{id:'5',name:'aslam',age:22}]
+let data=[,{id:'1',name:'fayas',age:22},{id:'2',name:'shahid',age:22},{id:'3',name:'althaf',age:22},{id:'4',name:'yasin',age:22},{id:'5',name:'aslam',age:22},]
 
 function Display(){
     let tbody=document.querySelector("tbody")
