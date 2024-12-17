@@ -6,10 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-
+<!-- 
     <h1 id="timer"></h1>
+    <div id="image"><img src="./image/shoe1.webp" alt=""></div> -->
 
-
+    <form id="form">
+        <input type="text" placeholder="name" required>
+        <input type="tel" name="" placeholder="mobile number" id="no" required>
+        <h3 id="h3"></h3>
+        <input type="submit" value="Add">
+    </form>
+    
     <script>
 
         // try{
@@ -49,15 +56,45 @@
 
 
 
-        let count=59
-        let data=setInterval(()=>{
+        // let min=1
+        // let sec=9
+        // let data=setInterval(()=>{
+        //     document.getElementById("timer").innerHTML=min+':'+sec
+        //     sec--
+        //     if(sec<0){
+        //         min--
+        //         sec=9
+        //         if (min<0){
+        //             clearInterval(data)
+        //             alert('completed')
+        //             document.getElementById("image").style.display='none'
+        //         }
+        //     }
+        // },1000)
 
-            document.getElementById("timer").innerHTML=count
-            count--
-            if(count<0){
-                clearInterval(data)
+
+        document.getElementById("form").addEventListener('submit',function(event){
+            event.preventDefault()
+            let no = document.getElementById("no").value
+            let h3=document.getElementById("h3")
+            if(/^[6-9]\d{9}/.test(no)){
+                h3.innerHTML='Valid'
+                h3.style.color='green'
             }
-        },1000)
+            else
+                h3.innerHTML='Invalid'
+                h3.style.color='red'
+
+
+        })
+        
+
+
+
+
+
+        
+        
 
 
 
