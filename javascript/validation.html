@@ -64,9 +64,9 @@
 
         document.getElementById("form").addEventListener('submit',function(event){
             event.preventDefault()
-            let no = document.getElementById("no").value
+            let no =document.getElementById("no").value
             let h3=document.getElementById("h3")
-            if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(no)){
+            if(/^[A-Za-z\d@$!%*?&]{8,}$/.test(no)){
                 h3.innerHTML='Valid'
                 h3.style.color='green'
             }
